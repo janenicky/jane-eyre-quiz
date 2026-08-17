@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Meie+Script&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+	<title>Jane Eyre Gothic Personality Quiz</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/style.css">
+	<script src="/script.js" defer></script>
+</head>
+<body>
+
+	<div id="video-bg" class="video-bg-container">
+		<img id="bg-image" src="assets/main-bg.png" alt="Gothic Background Aesthetic">
+		<div class="video-overlay"></div>
+	</div>
+
+
+	<div class="main-wrapper">
+
+	<main class="main-wrapper">
+      
+		<!-- The start -->
+		<div id="start-screen" class="quiz-page">
+			<h1 class="gothic-title">Which  "Jane  Eyre" character are you?</h1>
+			<p class="intro-text">Welcome, traveler. Answer 7 deep psychological questions to reveal your true  archetype from Charlotte Bronte's universe. Are you a resilient heroine, a tragic soul, or a piece of a burning estate?</p>
+			<button id="start-btn">Begin the Test</button>
+		</div>
+
+		<!-- QUESTION 1 -->
+		<div id="q1" class="quiz-page" style="display: none;">
+			<h2>1. Someone tries to break your will and control you. Your reaction?</h2>
+			<div class="answer-container">
+				<button id="q1a1" class="answer-btn">I hide behind a practical routine, domestic tasks, and dry schedules.</button>
+				<button id="q1a2" class="answer-btn">Absolute toxic explosion. I make it everyone's problem and burn everything down.</button>
+				<button id="q1a3" class="answer-btn">Pure self-destruction. I beautifully turn into an absolute physical ruin.</button>
+				<button id="q1a4" class="answer-btn">Quietly over-functioning. I get a medical prescription and write a long critique letter.</button>
+				<button id="q1a5" class="answer-btn">Elegant retreat. I pack my things and run away into the fog with a smart mentor.</button>
+			</div>
+		</div>
+
+		<!-- QUESTION 2 -->
+		<div id="q2" class="quiz-page" style="display: none;">
+			<h2>2. What does "absolute emotional safety" mean to you?</h2>
+			<div class="answer-container">
+				<button id="q2a1" class="answer-btn">Total medical/physical comfort. Locked doors, warm tea, and nobody touching me.</button>
+				<button id="q2a2" class="answer-btn">Living in an elite sanctuary where my deepest, darkest trauma is respected.</button>
+				<button id="q2a3" class="answer-btn">A dynamic, intense connection where we are both heavily toxic but matching.</button>
+				<button id="q2a4" class="answer-btn">Knowing there is a huge, bulletproof financial safety net waiting for me.</button>
+				<button id="q2a5" class="answer-btn">Complete independence. Just me, a massive foggy field, and my quiet morals.</button>
+			</div>
+		</div>
+
+		<!-- QUESTION 3 -->
+		<div id="q3" class="quiz-page" style="display: none;">
+			<h2>3. Your toxic trait under extreme psychological stress?</h2>
+			<div class="answer-container">
+				<button id="q3a1" class="answer-btn">Emotional calcification. I act like a saint but silently turn my heart into ice.</button>
+				<button id="q3a2" class="answer-btn">Over-functioning paranoia. I create dynamic, intense scenarios and panic.</button>
+				<button id="q3a3" class="answer-btn">Aggressive escapism. I download banking apps and check my inheritance plans.</button>
+				<button id="q3a4" class="answer-btn">Superficial arrogance. I put on an expensive outfit and ignore people.</button>
+				<button id="q3a5" class="answer-btn">Ghosting everyone. I lock myself in a dark room and block texts.</button>
+			</div>
+		</div>
+
+		<!-- QUESTION 4 -->
+		<div id="q4" class="quiz-page" style="display: none;">
+			<h2>4. Your friend is in a massive crisis. Your automatic role?</h2>
+			<div class="answer-container">
+				<button id="q4a1" class="answer-btn">Hostile judging. I tell them why they are wrong and ignore their crying.</button>
+				<button id="q4a2" class="answer-btn">Gothic drama. I sit there, looking out the rainy window, absorbing the shock.</button>
+				<button id="q4a3" class="answer-btn">Practical panic. I try to help, but accidentally expose their secret instead.</button>
+				<button id="q4a4" class="answer-btn">Elegant patronizing. I bring them a coffee and analyze their trauma.</button>
+				<button id="q4a5" class="answer-btn">Silent martyrdom. I carry their entire burden until I pass out from exhaustion.</button>
+			</div>
+		</div>
+
+		<!-- QUESTION 5 -->
+		<div id="q5" class="quiz-page" style="display: none;">
+			<h2>5. What is your absolute biggest fear when getting close to someone?</h2>
+			<div class="answer-container">
+				<button id="q5a1" class="answer-btn">Primal panic. That they will unleash the explosive, dark chaos I hide inside.</button>
+				<button id="q5a2" class="answer-btn">Disappointment. That they only like me for my money, status, or beautiful mask.</button>
+				<button id="q5a3" class="answer-btn">Losing my mind. Getting so addicted to their ego that I completely lose my path.</button>
+				<button id="q5a4" class="answer-btn">Petty betrayal. That they will gossip about my flaws behind my back.</button>
+				<button id="q5a5" class="answer-btn">Emotional boredom. Getting trapped in a rigid, cold routine where nothing burns.</button>
+			</div>
+		</div>
+
+		<!-- QUESTION 6 -->
+		<div id="q6" class="quiz-page" style="display: none;">
+			<h2>6. You are unexpectedly invited to a high-society gala. What are you doing?</h2>
+			<div class="answer-container">
+				<button id="q6a1" class="answer-btn">Main character energy. Arriving late in a dramatic suit and ignoring the rules.</button>
+				<button id="q6a2" class="answer-btn">Intellectual high tea. Discussing deep philosophy and judging everyone’s morals.</button>
+				<button id="q6a3" class="answer-btn">Hiding in the VIP room, drinking premium wine, and looking extremely spooky.</button>
+				<button id="q6a4" class="answer-btn">Dominating the dance floor, flirting with rich people, and creating cute drama.</button>
+				<button id="q6a5" class="answer-btn">Sitting in the dark corner in a plain dress, being a complete, silent rock.</button>
+			</div>
+		</div>
+
+		<!-- QUESTION 7 -->
+		<div id="q7" class="quiz-page" style="display: none;">
+			<h2>7. Choose an object that matches your current energy state.</h2>
+			<div class="answer-container">
+				<button id="q7a1" class="answer-btn">A broken vintage record player, loudly blasting dramatic opera songs in an empty house.</button>
+				<button id="q7a2" class="answer-btn">A literal box of matches hidden under a beautiful French doll.</button>
+				<button id="q7a3" class="answer-btn">A heavy velvet curtain color of dark blood, blocking a huge window looking out into a storm.</button>
+				<button id="q7a4" class="answer-btn">A scratched brass compass resting on top of an old family inheritance document.</button>
+				<button id="q7a5" class="answer-btn">A steel quill pen, sharply ink-stained, resting on a cold stone altar.</button>
+			</div>
+		</div>
+
+						<!-- Final screen -->
+		<div id="result-screen" class="quiz-page" style="display: none;">
+			<h2 id="result-title">Your Fate is Decided...</h2>
+		
+			<div class="result-image-container" style="width: 200px; height: 150px; margin: 10px auto 15px auto; background-color: #12100f; display: flex; align-items: center; justify-content: center; border-radius: 50%; overflow: hidden; border: 3px double #dfcbb5; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);">
+				<img id="img-jane" src="assets/jane.png" alt="Jane Eyre" style="display: none; width: 100%; height: 100%; object-fit: cover;">
+				<img id="img-rochester" src="assets/rochester.png" alt="Edward Rochester" style="display: none; width: 100%; height: 100%; object-fit: cover;">
+				<img id="img-stjohn" src="assets/stjohn.png" alt="St. John Rivers" style="display: none; width: 100%; height: 100%; object-fit: cover;">
+				<img id="img-blanche" src="assets/blanche.png" alt="Blanche Ingram" style="display: none; width: 100%; height: 100%; object-fit: cover;">
+				<img id="img-helen" src="assets/helen.png" alt="Helen Burns" style="display: none; width: 100%; height: 100%; object-fit: cover;">
+				<img id="img-mrsreed" src="assets/mrsreed.png" alt="Mrs. Reed" style="display: none; width: 100%; height: 100%; object-fit: cover;">
+				<img id="img-adele" src="assets/adele.png" alt="Adèle Varens" style="display: none; width: 100%; height: 100%; object-fit: cover;">
+				<img id="img-bertha" src="assets/bertha.png" alt="Bertha Mason" style="display: none; width: 100%; height: 100%; object-fit: cover;">
+				<img id="img-thornfield" src="assets/thornfield.png" alt="Thornfield Hall" style="display: none; width: 100%; height: 100%; object-fit: cover;">
+				<img id="img-inheritance" src="assets/inheritance.png" alt="The Inheritance" style="display: none; width: 100%; height: 100%; object-fit: cover;">
+				<img id="img-bessie" src="assets/bessie.png" alt="Bessie Lee" style="display: none; width: 100%; height: 100%; object-fit: cover;">
+				<img id="img-mrlloyd" src="assets/mrlloyd.png" alt="Mr. Lloyd" style="display: none; width: 100%; height: 100%; object-fit: cover;">
+				<img id="img-misstemple" src="assets/misstemple.png" alt="Miss Temple" style="display: none; width: 100%; height: 100%; object-fit: cover;">
+				<img id="img-richard" src="assets/richard.png" alt="Richard Mason" style="display: none; width: 100%; height: 100%; object-fit: cover;">
+				<img id="img-redroom" src="assets/redroom.png" alt="The Red Room" style="display: none; width: 100%; height: 100%; object-fit: cover;">
+			</div>
+
+
+			<h3 id="result-name">Calculating...</h3>
+			<p id="result-description">Analyzing your psychological traits...</p>
+
+			<button id="restart" style="margin-top: 30px;">Restart Quiz</button>
+		</div>
+
+
+	</main>
+
+</body>
+</html>

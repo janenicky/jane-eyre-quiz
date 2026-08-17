@@ -1,0 +1,222 @@
+/* STYLE SECTIONING TAGS */
+*, *::before, *::after {
+  box-sizing: border-box;
+  outline: none !important;
+  border: none;
+}
+
+html {
+  background-color: #070606; 
+}
+
+.video-bg-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -2;
+  background-color: #070606; 
+  overflow: hidden;
+
+  border: none !important;
+  outline: none !important;
+}
+
+#bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  
+  filter: contrast(1.05) brightness(0.4) sepia(0.1); 
+}
+
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(7,6,6,0.3) 0%, rgba(7,6,6,0.85) 100%);
+  z-index: -1;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: transparent; 
+  color: #E0DACD;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  
+  box-shadow: inset 0 0 100px #070606; 
+  overflow: hidden; 
+}
+
+
+.main-wrapper {
+  width: 100%;
+  max-width: 35%; 
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* STYLE TEXT */
+.gothic-title {
+  font-family: "Tangerine", cursive;
+  font-style: italic;
+  color: #ffffff;
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-family: "Tangerine", cursive; 
+  font-size: 1.7rem;
+  color: #ffffff;
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+
+.intro-text {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #b5ada3;
+  margin-bottom: 30px;
+}
+
+.answer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%; 
+  margin-top: 10px;
+}
+  
+/* STYLE BUTTONS */
+button, .answer-btn { 
+  font-family: "Montserrat", sans-serif;
+  background-color: #12100f; 
+  color: #E0DACD;
+  border: 1px solid #3d3530;
+  padding: 16px 20px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  cursor: pointer;
+  width: 100%;
+  text-align: center; 
+  transition: all 0.2s ease;
+}
+
+button:hover, .answer-btn:hover {
+  background-color: #E0DACD;
+  color: #070606;
+  border-color: #ffffff;
+}
+
+#start-btn, #restart {
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.result-image-container {
+  width: 150px; 
+  height: 150px;
+  margin: 10px auto 15px auto;
+  border-radius: 50%; 
+  overflow: hidden;
+  border: 3px double #dfcbb5; 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+  background-color: #12100f;
+}
+
+.result-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#result-name {
+  font-family: "Tangerine", cursive;
+  font-size: 1.9rem; 
+  color: #ffffff;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+#result-description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.88rem; 
+  line-height: 1.5;
+  color: #b5ada3; 
+  font-style: italic;
+  max-width: 420px; 
+  margin: 5px auto 20px auto;
+}
+
+#restart {
+  margin-top: 10px;
+  padding: 12px 30px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.quiz-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* for mobile */
+@media (max-width: 768px) {
+  
+  #bg-image {
+    display: none; 
+  }
+  
+  .video-bg-container {
+    background-color: #070606; 
+  }
+  
+  .video-overlay {
+    background: #070606;
+  }
+  
+  .main-wrapper {
+    max-width: 90%;
+    padding: 20px 10px;
+  }
+  
+  .gothic-title {
+    font-size: 1.8rem;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+  }
+  
+  .result-image-container {
+    width: 170px;
+    height: 170px;
+  }
+}
